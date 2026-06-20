@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Forgot Password</h2>
+    <form>
+      <input type="email" id="forgot-email" placeholder="Enter your Email"><br>
+      <div id="forgot-step2" style="display:none">
+        <p id="forgot-question-label"></p>
+        <input type="text" id="forgot-answer" placeholder="Your answer"><br>
+        <input type="password" id="forgot-newpass" placeholder="New Password"><br>
+      </div>
+      <button type="button" onclick="doForgot()">Submit</button>
+      <p><a href="login.html">← Back to Login</a></p>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

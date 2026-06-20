@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form>
+      <input type="text" id="signup-name" placeholder="Full Name" required><br>
+      <input type="email" id="signup-email" placeholder="Email" required><br>
+      <input type="password" id="signup-pass" placeholder="Password" required><br>
+      <input type="password" id="signup-confirm" placeholder="Confirm Password" required><br>
+      <select id="signup-question">
+        <option value="pet">What is your pet's name?</option>
+        <option value="city">What city were you born in?</option>
+        <option value="school">What is your school name?</option>
+      </select>
+      <input type="text" id="signup-answer" placeholder="Your answer"><br>
+      <button type="button" onclick="doSignup()">Sign Up</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
